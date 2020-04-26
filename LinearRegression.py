@@ -1,3 +1,4 @@
+#Uses a linear regression model in order to predict the yearly amount spent
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

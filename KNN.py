@@ -1,3 +1,5 @@
+#Uses K Nearest Neighbors in order to predict the correct Target Class
+#value given a series of features
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

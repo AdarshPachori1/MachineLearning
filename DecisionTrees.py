@@ -1,3 +1,5 @@
+#Uses a decision tree classifier in order to analyze features
+#and predict whether a loan will be fully paid back
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

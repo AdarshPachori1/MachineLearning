@@ -1,3 +1,5 @@
+#Analyzes loan data and predicts based on features whether a loan
+#will get paid back in completion using a Random Forest Classifier
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
