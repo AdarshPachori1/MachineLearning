@@ -26,12 +26,35 @@ def KNNClassification():
     knn.fit(x_train, y_train)
     predictions = knn.predict(x_test)
     
-    #printing accuracy of our model
-    print("\n\nConfusion Matrix\n")
+    #printing accuracy of our model with K-value 1
+    print("\n\nUSING AN ARBITRARY K-VALUE\n")
+    print("Confusion Matrix\n")
     print(confusion_matrix(y_test, predictions))
     print("\nClassification Report\n")
     print(classification_report(y_test, predictions))
     
+    #choosing an appropriate K-value
+    error_rates = []
+    for i in range(1,40):
+        knn = KNeighborsClassifier(n_neighbors = i)
+        knn.fit(x_train, y_train)
+        predictions = knn.predict(x_test)
+        error_rates.append(np.mean(predictions!=y_test))
+    
+    #visualizing which K-value minimizes error
+    plt.scatter(np.array(range(1,40)), error_rates, lw = 0.2)
+    
+    #Retraining model with ideal K-value to mimize the error
+    knn = KNeighborsClassifier(n_neighbors = 26)
+    knn.fit(x_train, y_train)
+    predictions = knn.predict(x_test)
+    
+    #printing accuracy of our model with ideal K-value
+    print("\n\nUSING THE IDEAL K-VALUE\n")
+    print("Confusion Matrix\n")
+    print(confusion_matrix(y_test, predictions))
+    print("\nClassification Report\n")
+    print(classification_report(y_test, predictions))
     
 if __name__ == "__main__":
     KNNClassification()
