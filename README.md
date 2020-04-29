@@ -14,4 +14,3 @@ Performed Natural Language Processing work using the natural language processing
 
 
 Created artificial and deep neural networks using tensorflow and saved the details of the neural network onto a file using tensorboard. 
-
