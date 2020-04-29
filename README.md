@@ -11,7 +11,7 @@ Trained and tested various models/classifiers including:
     - Decision Trees
     - Random Forests
     - Support Vector Machines
-    
+     
   supervised:
     - K-means clustering
     - Principal Component Analysis
