@@ -3,6 +3,7 @@
 Explored and visualized several datasets using pandas, seaborn, plotly and cufflinks (however, iplots don't show on github).
 
 Trained and tested various models/classifiers including:
+  
   unsupervised:
     - Linear Regression
     - Logistic Regression
@@ -10,6 +11,7 @@ Trained and tested various models/classifiers including:
     - Decision Trees
     - Random Forests
     - Support Vector Machines
+    
   supervised:
     - K-means clustering
     - Principal Component Analysis
