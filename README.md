@@ -1,6 +1,6 @@
 # MachineLearning
 
-Explored and visualized several datasets using pandas, seaborn, plotly and cufflinks (however, iplots don't show on github).
+Explored and visualized several datasets using pandas, seaborn, plotly, and cufflinks (however, iplots don't show on github).
 
 
 Trained and tested various models/classifiers including:
